@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import WeddingImage from "../pictures/weddingDecoration.jpg";
-import Logo from "../pictures/logo.png";
+import Logo from "../pictures/ballons.png";
 import Button from "./Button";
 import "../css/hero.css";
 
@@ -11,10 +12,16 @@ const Hero = () => {
         <div className="hero-logo">
           <img src={Logo} alt="" />
         </div>
-        <h1 className="hero-title">BSoft</h1>
+        <br></br>
+        <br></br>
+        <br></br>
+        <h1 className="hero-title">Mia Baloni</h1>
         <h2>Sve vrste dekoracija</h2>
         
-        <Button> Rezervišite svoj termin</Button>
+        <Link to="/kontakt">
+          {" "}
+          <Button> Rezervišite svoj termin</Button>
+        </Link>
       </div>
     </section>
   );

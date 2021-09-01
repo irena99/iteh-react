@@ -4,6 +4,7 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 import Nav from "./components/Nav";
+import ThankYouPage from "./pages/ThankYouPage";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route path="/kontakt">
             <ContactPage />
+          </Route>
+          <Route path="/hvala">
+            <ThankYouPage />
           </Route>
         </Switch>
        
