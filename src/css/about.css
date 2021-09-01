@@ -1,0 +1,43 @@
+.about {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+  }
+  
+  .about h1 {
+    padding: 10px;
+    font-size: 40px;
+  }
+  .about-container {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+  }
+  .about-container > div {
+    width: 50%;
+  }
+  .about-text p {
+    font-size: 25px;
+  }
+  .about-img-container img {
+    width: 100%;
+  }
+  
+  /****Responsive*****/
+  @media only screen and (max-width: 426px) {
+    .about-container {
+      flex-direction: column;
+    }
+    .about-container > div {
+      width: 100%;
+    }
+  }
